@@ -27,6 +27,7 @@
 
         body {
             background-color: rgb(0, 0, 0);
+            min-width: 1700px;
         }
         .title{
             display: flex;
@@ -84,7 +85,6 @@
             font-size: 40px;
             border: 4px dashed white;
             margin-top: 5%; 
-            margin-left: 6%;
             text-align: center;
             width: 700px;
         }
@@ -114,7 +114,7 @@
         }
     </script>
 </head>
-<body>
+<body style="min-width: 1700px;">
     <header style="position: static;" class="clearfix">
         <div class="logo">
             <img src="q.jpg">
@@ -132,24 +132,29 @@
         </nav>
     </header>
     <main>
-        
-        <img style="opacity: 0.3; position: absolute;" src="p.webp">
-            <div style="position: absolute; width: 100%; display: flex; flex-direction: column;">
-                <p class="stat1"><br>Ищите способ<br> провести свой досуг?<br>Тогда вы<br> по адрессу!</p>
-                <img style="margin-left: 6%; margin-top: 70px;" src="bilet.png" width=700px>
+        <div style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(p.webp); width: 100%; height: 1300px;">
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: row; justify-content: space-around; margin-top: 70px; margin-left: 25px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <p class="stat1"><br>Ищите способ<br> провести свой досуг?<br>Тогда вы<br> по адрессу!</p>
+                        <img style="margin-top: 70px;" src="bilet.png" width=700px>
+                    </div>
+                    <div style="background-color: white; float: right;border-radius: 20px; height: 620px; margin-top: 25px;">
+                        <h2>Причины прийти<br> к нам:</h2>
+                            <p class="stat2">Большие и комфортные кинозалы</p>
+                            <p class="stat2">Разнообразие в выборе фильмов</p>
+                            <p class="stat2">Шаговая доступность</p>
+                            <p class="stat2">Недорогие билеты</p>
+                            <p class="stat2">Простая и понятная система</p>
+                    </div>
+                </div>
+                <p style="font-size: 100px; font-family: Rubik Mono One; text-align: center; color: white; margin-top: 125px;">Кинотеатр Кинолюб - ждём вас в гости!</p>
             </div>
-            <div style="background-color: white; display: block; float: right;border-radius: 20px; margin-top: 5%; margin-left: 55%; position: absolute;">
-                <h2>Причины прийти<br> к нам:</h2>
-                    <p class="stat2">Большие и комфортные кинозалы</p>
-                    <p class="stat2">Разнообразие в выборе фильмов</p>
-                    <p class="stat2">Шаговая доступность</p>
-                    <p class="stat2">Недорогие билеты</p>
-                    <p class="stat2">Простая и понятная система</p>
-            </div>
-            <p style="position: absolute; font-size: 100px; margin-top: 50%; font-family: Rubik Mono One; text-align: center; color: white;">Кинотеатр Кинолюб - ждём вас в гости!</p>
+        </div>
+        <!--img style="opacity: 0.3; position: absolute;" src="p.webp"-->
     </main>
     <footer>
-        <div style="display: flex; flex-direction: row; margin-top: 69%; margin-left: 2%;">
+        <div style="display: flex; flex-direction: row; margin-top: 40px; margin-left: 2%;">
             <a href="http://t.me/Kinobelet_bot"><img style="margin-bottom: 50%;" src="Logo.svg" width="50px"></a>
             <p style="color: white; font-family: Rubik Mono One; margin-top: 1%; margin-left: 2%;">Чтобы забронировать место заходите в наш телеграмм</p>
             <a href="https://github.com/JulkaIvanova/proektInQvantorium.git"><img style="margin-bottom: 50%; margin-left: 500%;" src="gitlogo.com" width="50px"></a>
